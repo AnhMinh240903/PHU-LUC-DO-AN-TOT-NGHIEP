@@ -1,0 +1,108 @@
+{
+  "initial_features": [
+    "object_class",
+    "object_instance",
+    "bbox_w_norm",
+    "bbox_h_norm",
+    "bbox_area_norm",
+    "aspect_ratio",
+    "cx_norm",
+    "cy_norm",
+    "conf"
+  ],
+  "state_features": [
+    "object_class",
+    "object_instance",
+    "bbox_w_norm",
+    "bbox_h_norm",
+    "bbox_area_norm",
+    "aspect_ratio",
+    "cx_norm",
+    "cy_norm",
+    "conf",
+    "grip_ratio",
+    "left_sum_avg",
+    "right_sum_avg",
+    "contact_area_avg",
+    "L_OUT_avg",
+    "L_IN_avg",
+    "R_IN_avg",
+    "R_OUT_avg",
+    "L_OUT_max",
+    "L_IN_max",
+    "R_IN_max",
+    "R_OUT_max",
+    "total_avg",
+    "total_max"
+  ],
+  "vision_cat_features": [
+    "object_class",
+    "object_instance"
+  ],
+  "bbox_features": [
+    "bbox_w_norm",
+    "bbox_h_norm",
+    "bbox_area_norm",
+    "aspect_ratio",
+    "cx_norm",
+    "cy_norm",
+    "conf"
+  ],
+  "state_cat_features": [
+    "object_class",
+    "object_instance"
+  ],
+  "state_num_features": [
+    "bbox_w_norm",
+    "bbox_h_norm",
+    "bbox_area_norm",
+    "aspect_ratio",
+    "cx_norm",
+    "cy_norm",
+    "conf",
+    "grip_ratio",
+    "left_sum_avg",
+    "right_sum_avg",
+    "contact_area_avg",
+    "L_OUT_avg",
+    "L_IN_avg",
+    "R_IN_avg",
+    "R_OUT_avg",
+    "L_OUT_max",
+    "L_IN_max",
+    "R_IN_max",
+    "R_OUT_max",
+    "total_avg",
+    "total_max"
+  ],
+  "sensor_features": [
+    "left_sum_avg",
+    "right_sum_avg",
+    "contact_area_avg",
+    "L_OUT_avg",
+    "L_IN_avg",
+    "R_IN_avg",
+    "R_OUT_avg",
+    "L_OUT_max",
+    "L_IN_max",
+    "R_IN_max",
+    "R_OUT_max",
+    "total_avg",
+    "total_max"
+  ],
+  "runtime_policy": {
+    "initial_clip_min": 0.0,
+    "initial_clip_max": 1.0,
+    "slip_increase_step": 0.02,
+    "overforce_decrease_step": 0.01,
+    "max_adjustments": 8,
+    "success_prob_threshold": 0.55,
+    "slip_prob_threshold": 0.45,
+    "overforce_prob_threshold": 0.45
+  },
+  "notes": {
+    "initial_output": "best_grip_ratio",
+    "state_output": "label: success/slip/overforce/fail",
+    "important": "Current dataset does not contain calibrated physical force. Do not use target_force as output yet."
+  }
+}

@@ -1,0 +1,21 @@
+description: Ultralytics best model trained on /content/drive/MyDrive/YOLOV8TRAIN/data.yaml
+author: Ultralytics
+date: '2026-03-25T03:46:42.668829'
+version: 8.4.26
+license: AGPL-3.0 License (https://ultralytics.com/license)
+docs: https://docs.ultralytics.com
+stride: 32
+task: detect
+batch: 1
+imgsz:
+- 640
+- 640
+names:
+  0: ball
+  1: can
+  2: bottle
+args:
+  batch: 1
+  half: false
+channels: 3
+end2end: false

@@ -1,0 +1,8 @@
+path: /content/drive/MyDrive/YOLOV8TRAIN
+train: train/images
+val: val/images
+
+names:
+  0: ball
+  1: can
+  2: bottle
